@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #FFFFFF; /* Changed to white */
-    color: #000000; /* Changed to black */
+    background-color: #FFFFFF;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -16,11 +16,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #87CEEB; /* Light sky blue */
+    background-color: #87CEEB;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adjusted shadow to grey */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
@@ -29,7 +29,7 @@ header {
 }
 
 nav a {
-    color: #000000; /* Changed to black */
+    color: #000000;
     text-decoration: none;
     margin: 0 20px;
     font-size: 18px;
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1E90FF; /* Kept blue for hover effect */
+    color: #1E90FF;
 }
 
 main {
@@ -57,7 +57,7 @@ section {
     gap: 40px;
     min-height: 80vh;
     padding: 60px 0;
-    background: linear-gradient(180deg, #F0F8FF, #FFFFFF); /* Light gradient */
+    background: linear-gradient(180deg, #F0F8FF, #FFFFFF);
 }
 
 .home-content {
@@ -67,15 +67,15 @@ section {
 
 .how-to-buy {
     flex: 0 0 35%;
-    background-color: #F5F5F5; /* Light grey */
+    background-color: #F5F5F5;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adjusted shadow to grey */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .how-to-buy h2 {
     font-size: 26px;
-    color: #1E90FF; /* Kept blue for contrast */
+    color: #1E90FF;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -97,7 +97,7 @@ section {
 }
 
 h1, h2 {
-    color: #1E90FF; /* Kept blue for headings */
+    color: #1E90FF;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -135,20 +135,20 @@ li {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #1E90FF; /* Kept blue */
-    color: #FFFFFF; /* White text for contrast */
+    background-color: #1E90FF;
+    color: #FFFFFF;
     text-decoration: none;
     border-radius: 25px;
     margin-top: 20px;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjusted shadow to grey */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #4682B4; /* Slightly darker blue on hover */
+    background-color: #4682B4;
 }
 
 .section-image {
@@ -156,13 +156,48 @@ li {
     max-width: 100%;
     margin: 30px auto;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adjusted shadow to grey */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #4682B4;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #1E90FF;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #87CEEB; /* Light sky blue */
+    background-color: #87CEEB;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -214,5 +249,16 @@ footer p {
     .btn {
         font-size: 16px;
         padding: 10px 20px;
+    }
+
+    .social-link {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+        line-height: 16px;
+        font-size: 14px;
     }
 }
