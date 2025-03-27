@@ -43,6 +43,49 @@ section {
     margin-bottom: 60px;
 }
 
+/* Home Section with Flexbox */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.home-content {
+    flex: 1;
+    max-width: 60%;
+}
+
+.how-to-buy {
+    flex: 0 0 35%;
+    background-color: #2A2A2A;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.how-to-buy h2 {
+    font-size: 24px;
+    color: #1E90FF;
+    margin-bottom: 15px;
+}
+
+.how-to-buy p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.how-to-buy ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.how-to-buy li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 h1, h2 {
     color: #1E90FF;
     margin-bottom: 20px;
@@ -118,6 +161,15 @@ footer p {
     nav a {
         display: block;
         margin: 10px 0;
+    }
+
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home-content, .how-to-buy {
+        max-width: 100%;
+        flex: 1;
     }
 
     h1 {
