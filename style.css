@@ -5,10 +5,11 @@
 }
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif; /* Updated to Inter for body text */
     background-color: #FFFFFF;
     color: #000000;
-    line-height: 1.6;
+    line-height: 1.8; /* Increased for better readability */
+    font-size: 16px; /* Base font size */
 }
 
 header {
@@ -32,9 +33,10 @@ nav a {
     color: #000000;
     text-decoration: none;
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller for better proportion */
     font-weight: 600;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins for nav links */
 }
 
 nav a:hover {
@@ -49,35 +51,36 @@ section {
     margin-bottom: 80px;
 }
 
-/* Home Section with Flexbox */
+/* Home Section - Single Column */
 .home-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center content */
     min-height: 80vh;
     padding: 60px 0;
     background: linear-gradient(180deg, #F0F8FF, #FFFFFF);
 }
 
 .home-content {
-    flex: 1;
-    max-width: 60%;
+    text-align: center; /* Center text */
+    margin-bottom: 40px; /* Space between home-content and how-to-buy */
 }
 
 .how-to-buy {
-    flex: 0 0 35%;
     background-color: #F5F5F5;
-    padding: 25px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text */
+    max-width: 600px; /* Limit width for better readability */
 }
 
 .how-to-buy h2 {
-    font-size: 26px;
+    font-size: 28px; /* Slightly larger */
     color: #1E90FF;
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
 }
 
 .how-to-buy p {
@@ -87,8 +90,10 @@ section {
 
 .how-to-buy ol {
     list-style-type: decimal;
-    padding-left: 20px;
-    margin-bottom: 15px;
+    padding-left: 0;
+    margin: 0 auto 15px auto; /* Center the list */
+    text-align: left; /* Left-align list items */
+    max-width: 400px; /* Limit width for readability */
 }
 
 .how-to-buy li {
@@ -96,10 +101,15 @@ section {
     margin-bottom: 10px;
 }
 
+.how-to-buy p:last-child {
+    margin-top: 20px; /* Space above disclaimer note */
+}
+
 h1, h2 {
     color: #1E90FF;
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
     font-weight: 700;
 }
 
@@ -114,7 +124,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
     max-width: 800px;
     margin-left: auto;
@@ -125,11 +135,18 @@ ul {
     list-style-type: disc;
     padding-left: 40px;
     margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center; /* Center the button */
 }
 
 .btn {
@@ -139,12 +156,12 @@ li {
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 25px;
-    margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
 }
 
 .btn:hover {
@@ -173,6 +190,7 @@ li {
     font-weight: 600;
     margin-top: 20px;
     transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
 }
 
 .social-link:hover {
@@ -192,6 +210,7 @@ li {
     margin-right: 10px;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
 }
 
 footer {
@@ -206,6 +225,7 @@ footer {
 footer p {
     font-size: 16px;
     font-weight: 500;
+    font-family: 'Inter', sans-serif; /* Updated to Inter */
 }
 
 /* Responsive Design */
@@ -225,13 +245,7 @@ footer p {
     }
 
     .home-section {
-        flex-direction: column;
         padding: 40px 0;
-    }
-
-    .home-content, .how-to-buy {
-        max-width: 100%;
-        flex: 1;
     }
 
     h1 {
@@ -243,12 +257,16 @@ footer p {
     }
 
     p, li {
-        font-size: 16px;
+        font-size: 14px; /* Slightly smaller on mobile */
     }
 
     .btn {
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px 20px;
+    }
+
+    .how-to-buy {
+        padding: 20px;
     }
 
     .social-link {
