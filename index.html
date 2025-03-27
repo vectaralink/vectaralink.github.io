@@ -16,8 +16,10 @@
             <a href="#home">Home</a>
             <a href="#problems">Problems</a>
             <a href="#modular">Modular Paradigm</a>
+            <a href="#architecture">Architecture</a>
             <a href="#use-cases">Use Cases</a>
             <a href="#roadmap">Roadmap</a>
+            <a href="#legal">Legal</a>
         </nav>
     </header>
 
@@ -36,9 +38,9 @@
                 <ol>
                     <li><strong>Download the Moonshot App:</strong> Get the Moonshot app from the iOS App Store or Google Play Store.</li>
                     <li><strong>Sign Up:</strong> Create an account using your email and Face ID—no seed phrases required.</li>
-                    <li><strong>Deposit Funds:</strong> Add funds using Apple Pay, credit/debit card, or crypto (e.g., Solana). Moonshot supports multiple payment methods for easy deposits.</li>
+                    <li><strong>Deposit Funds:</strong> Add funds using Apple Pay, credit/debit card, or crypto (e.g., Solana).</li>
                     <li><strong>Search for Vectara:</strong> In the app, search for "Vectara" in the list of meme coins.</li>
-                    <li><strong>Buy Vectara:</strong> Enter the amount you want to purchase and confirm the transaction. Your Vectara tokens will be credited to your self-custodial wallet.</li>
+                    <li><strong>Buy Vectara:</strong> Enter the amount you want to purchase and confirm the transaction.</li>
                 </ol>
                 <p><strong>Note:</strong> Meme coins are highly volatile. Only invest what you can afford to lose, and always do your own research (DYOR).</p>
             </div>
@@ -67,7 +69,19 @@
                 <li><strong>Consensus Layer:</strong> Secures the network via Proof-of-Stake with VCT tokens, shared across modules.</li>
                 <li><strong>Settlement Layer:</strong> Finalizes state transitions, resolves disputes, and enables cross-chain coordination.</li>
             </ul>
-            <p>This separation allows each component to scale independently, delivering optimal performance without compromising security.</p>
+            <img src="assets/modular-architecture.png" alt="Vectara Modular Blockchain Architecture" class="section-image">
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture">
+            <h2>Vectara Architecture</h2>
+            <p>Vectara’s architecture embraces full-stack modularity, combining four foundational components:</p>
+            <ul>
+                <li><strong>Vectara Consensus Chain (VCC):</strong> Maintains global network security, coordinates validators, and finalizes transactions with shared security and governance coordination.</li>
+                <li><strong>Execution Modules (ExMods):</strong> Flexible environments for smart contracts, supporting EVM, WASM, and custom VMs, with independent upgrades and composable architecture.</li>
+                <li><strong>Vectara Data Availability Layer (VDA):</strong> Stores and validates transaction data for rollups, enabling trust-minimized scalability and light client compatibility.</li>
+                <li><strong>Vectara Link:</strong> Native messaging and interoperability layer, connecting ExMods, rollups, and external ecosystems with a security-first design.</li>
+            </ul>
         </section>
 
         <!-- Use Cases Section -->
@@ -78,9 +92,10 @@
                 <li><strong>DeFi at Scale:</strong> App-specific rollups, reduced MEV, and cross-chain liquidity.</li>
                 <li><strong>On-Chain Gaming:</strong> Real-time execution chains, modular game economies, and P2P micro-rewards.</li>
                 <li><strong>AI + Blockchain:</strong> Decentralized AI models, verifiable outputs, and tokenized intelligence access.</li>
-                <li><strong>Decentralized Social:</strong> Custom execution chains, cross-app identity, and tokenized engagement.</li>
+                <li><strong>Decentralized Social Platforms:</strong> Custom execution chains, cross-app identity, and tokenized engagement.</li>
                 <li><strong>Enterprise & Government:</strong> Modular compliance, private execution with public settlement, and digital identity.</li>
             </ul>
+            <img src="assets/use-cases.png" alt="Unlocking Innovation with Vectara" class="section-image">
         </section>
 
         <!-- Roadmap Section -->
@@ -88,11 +103,26 @@
             <h2>Roadmap</h2>
             <p>Vectara’s development is phased for stability and adoption:</p>
             <ul>
-                <li><strong>Q2 2025 - Testnet Alpha:</strong> Launch of VCC, VDA, and SDKs for rollup deployment.</li>
-                <li><strong>Q3 2025 - VectaraPup ($VPUP):</strong> Solana-based meme coin to engage the community.</li>
-                <li><strong>Q4 2025 - Mainnet Beta:</strong> VCT staking, initial execution modules, and bridging infrastructure.</li>
-                <li><strong>Q1 2026 - Ecosystem Onboarding:</strong> Grants, partnerships, and dApps in DeFi, AI, gaming, and social.</li>
-                <li><strong>Mid–Late 2026 - Full Interoperability:</strong> Vectara Link, DAO governance, and cross-rollup composability.</li>
+                <li><strong>Phase 1: VectaraPup ($VPUP) Launched on Solana:</strong> A Solana-based meme coin to engage the community with airdrops and competitions.</li>
+                <li><strong>Phase 2: Testnet Alpha:</strong> Launch of VCC, VDA, and SDKs for rollup deployment.</li>
+                <li><strong>Phase 2: Mainnet Beta:</strong> VCT staking, initial execution modules, and bridging infrastructure.</li>
+                <li><strong>Phase 3: Ecosystem Onboarding:</strong> Grants, partnerships, and dApps in DeFi, AI, gaming, and social.</li>
+                <li><strong>Phase 4: Full Interoperability & DAO Governance:</strong> Vectara Link, on-chain governance, and cross-rollup composability.</li>
+            </ul>
+        </section>
+
+        <!-- Legal Section -->
+        <section id="legal">
+            <h2>Legal Terms & Conditions</h2>
+            <p>By using Vectara, you agree to the following terms:</p>
+            <ul>
+                <li><strong>No Liability:</strong> The Vectara team disclaims liability for losses, smart contract bugs, regulatory actions, or third-party integrations.</li>
+                <li><strong>Experimental Nature:</strong> Vectara is an experimental protocol under development, not a finished product.</li>
+                <li><strong>No Warranties:</strong> The protocol is provided “as is” with no guarantees of security, uptime, or profitability.</li>
+                <li><strong>Regulatory Compliance:</strong> Users are responsible for ensuring legal compliance in their jurisdiction.</li>
+                <li><strong>Investment Risks:</strong> VCT and $VPUP are volatile assets with no guaranteed value.</li>
+                <li><strong>Meme Coin Disclaimer – $VPUP:</strong> $VPUP is a community-issued meme token for engagement, with no utility or value.</li>
+                <li><strong>No Financial Advice:</strong> This document does not constitute financial, legal, or investment advice.</li>
             </ul>
         </section>
     </main>
