@@ -25,13 +25,13 @@ header {
 }
 
 .logo {
-    margin-right: 20px; /* Added for better spacing between logo and nav */
+    margin-right: 20px;
 }
 
 .logo img {
     height: 60px;
     width: auto;
-    display: block; /* Ensures the image is treated as a block for consistent alignment */
+    display: block;
 }
 
 nav a {
@@ -175,9 +175,9 @@ li {
 
 .section-image {
     display: block;
-    max-width: 800px; /* Added to limit width on large screens */
-    width: 100%; /* Ensures responsiveness */
-    margin: 40px auto; /* Increased vertical margin for better spacing */
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -287,6 +287,6 @@ footer p {
     }
 
     .section-image {
-        margin: 20px auto; /* Reduced vertical margin on mobile for better spacing */
+        margin: 20px auto;
     }
 }
